@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: django-goldenpay
+Version: 0.0.1
+Summary: Make Payments by GoldenPay
+Home-page: https://github.com/arahimli/django_goldenpay
+Author: Atakhan Rahimli
+Author-email: <ataxanr@gmail.com>
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/arahimli/django_goldenpay/issues
+Description: 
+        # goldenpay django
+        
+        Developed by Atakhan Rahimli (c) 2021
+        
+        ## Examples of How To Use the package
+        
+        Creating A Server
+        
+        ```python
+        from django_goldenpay import PaymentGatewayGoldenpay
+        
+        # Choose One
+        paymentGatewayGoldenpay = PaymentGatewayGoldenpay()
+        
+        #result = paymentGatewayGoldenpay.getPaymentKeyJSONRequest(amount, 'Lang code', 'card type', 'Your description here') 
+        result = paymentGatewayGoldenpay.getPaymentKeyJSONRequest(2600, 'lv', 'v', 'description here')
+        
+        status_code = result['paymentKeyResult']['status']['code'],
+        status_message = result['paymentKeyResult']['status']['message'],
+        paymentKey = result['paymentKeyResult']['paymentKey'],
+        urlRedirect = result['urlRedirect'],
+        ```
+        
+        https://github.com/arahimli/django_goldenpay.git
+Keywords: python,django,payment,goldenpay,goldenpay django,goldenpay python
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

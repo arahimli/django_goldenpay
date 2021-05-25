@@ -1,0 +1,10 @@
+[build-system]
+requires = [
+#     "setuptools>=42",
+    "setuptools",
+    "django>=1.9",
+    "wheel",
+    "xmltodict",
+    "requests",
+]
+build-backend = "setuptools.build_meta"

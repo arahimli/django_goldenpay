@@ -1,0 +1,1 @@
+from django_goldenpay.goldenpay_class import PaymentGatewayGoldenpay
